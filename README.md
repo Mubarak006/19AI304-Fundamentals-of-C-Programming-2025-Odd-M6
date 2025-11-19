@@ -107,50 +107,6 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 11:
   Stop
 # Program:
-# Output:
-# Result: 
-Thus, the program was implemented and executed successfully, and the required output was obtained.
-
-# 19AI304-Fundamentals-of-C-Programming-2025-Odd-M6
-# IAPR-6- Module 6 - FoC
-# Ex.No:28
-  Develop a C program to store details of n employees (employee number, name, and salary) using structures, and display the employee(s) with the highest salary.
-# Date : 24-10-25
-# Aim:
-  To develop and implement a C program that uses a structure to store employee details (employee number, name, and salary) and determine the employee(s) with the highest salary.
-# Algorithm:
-### Step 1:
-  Start
-### Step 2: 
-  Include the standard input-output library: #include<stdio.h>.
-### Step 3:
-  Define a structure `employee` with the following members:  
-  - `eno` (employee number)  
-  - `ename` (employee name)  
-  - `salary` (employee salary)
-### Step 4:
-  Declare an array of structures to store details of multiple employees.
-### Step 5:
-  Input the number of employees, `n`.
-### Step 6:
-  For each employee (`i = 0` to `n-1`), do the following:  
-  - **Step 6.1:** Input employee number.  
-  - **Step 6.2:** Input employee name (allow spaces).  
-  - **Step 6.3:** Input employee salary.  
-  - **Step 6.4 (Optional):** Print the entered details for verification.
-### Step 7:
-  Initialize a variable `high` with the salary of the first employee.
-### Step 8:
-  For each employee (`i = 1` to `n-1`), do the following:  
-  - **Step 8.1:** Compare employee salary with `high`.  
-  - **Step 8.2:** If the salary is greater than `high`, update `high` with this salary.
-### Step 9:
-  Print the details of employee(s) whose salary matches `high`:  
-  - **Step 9.1:** Loop through all employees.  
-  - **Step 9.2:** If employee salary equals `high`, print employee number, name, and salary.
-### Step 10:
-  Stop
-# Program:
 ```
 #include <stdio.h>
 
@@ -192,53 +148,52 @@ int main() {
     return 0;
 }
 
-
-
 ```
 # Output:
 
-<img width="566" height="409" alt="image" src="https://github.com/user-attachments/assets/b6e5cd4c-0993-49ec-b799-41f45545e906" />
+<img width="515" height="394" alt="image" src="https://github.com/user-attachments/assets/a563ce99-27cc-485d-b063-3bb74f845568" />
 
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
-
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd-M6
 # IAPR-6- Module 6 - FoC
-# Ex.No:29
-  Create the C program to calculate the present age of a person by passing structure as a reference.
+# Ex.No:28
+  Develop a C program to store details of n employees (employee number, name, and salary) using structures, and display the employee(s) with the highest salary.
 # Date : 24-10-25
 # Aim:
-  To create a C program that uses a structure to store the current date and birth date, and to calculate the person’s present age in years, months, and days by passing the structure as a reference.
+  To develop and implement a C program that uses a structure to store employee details (employee number, name, and salary) and determine the employee(s) with the highest salary.
 # Algorithm:
 ### Step 1:
   Start
 ### Step 2: 
   Include the standard input-output library: #include<stdio.h>.
 ### Step 3:
-  Define a structure named `date` with members to store:  
-  - Current date (`c_date`, `c_month`, `c_year`)  
-  - Birth date (`b_date`, `b_month`, `b_year`)  
-  - Calculated age (`cal_date`, `cal_month`, `cal_year`)
+  Define a structure `employee` with the following members:  
+  - `eno` (employee number)  
+  - `ename` (employee name)  
+  - `salary` (employee salary)
 ### Step 4:
-  Initialize a structure variable with the current date and birth date values.
+  Declare an array of structures to store details of multiple employees.
 ### Step 5:
-  Pass the structure variable to a function `findAge()` by reference.
+  Input the number of employees, `n`.
 ### Step 6:
-  Inside `findAge()`:  
-  - a. Declare an integer array `month[]` to store the number of days in each month.  
-  - b. If the birth date is greater than the current date:  
-     - Add the number of days of the previous month to the current date.  
-     - Decrease the current month by 1.  
-  - c. If the birth month is greater than the current month:  
-     - Decrease the current year by 1.  
-     - Add 12 to the current month.  
-  - d. Calculate the age in days, months, and years by subtracting the corresponding birth values from the current values.
+  For each employee (`i = 0` to `n-1`), do the following:  
+  - **Step 6.1:** Input employee number.  
+  - **Step 6.2:** Input employee name (allow spaces).  
+  - **Step 6.3:** Input employee salary.  
+  - **Step 6.4 (Optional):** Print the entered details for verification.
 ### Step 7:
-  Return the structure pointer containing the calculated age.
+  Initialize a variable `high` with the salary of the first employee.
 ### Step 8:
-  Display the calculated age (years, months, and days) in the `main` function.
+  For each employee (`i = 1` to `n-1`), do the following:  
+  - **Step 8.1:** Compare employee salary with `high`.  
+  - **Step 8.2:** If the salary is greater than `high`, update `high` with this salary.
 ### Step 9:
+  Print the details of employee(s) whose salary matches `high`:  
+  - **Step 9.1:** Loop through all employees.  
+  - **Step 9.2:** If employee salary equals `high`, print employee number, name, and salary.
+### Step 10:
   Stop
 # Program:
 ```
@@ -288,10 +243,10 @@ int main() {
 
 
 
+
 ```
 # Output:
-
-<img width="645" height="558" alt="image" src="https://github.com/user-attachments/assets/0be2af72-d153-4949-96b9-67b32fce3e8d" />
+<img width="596" height="525" alt="image" src="https://github.com/user-attachments/assets/1d973d2c-8612-4a46-a8d4-f736746371ac" />
 
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
@@ -299,33 +254,40 @@ Thus, the program was implemented and executed successfully, and the required ou
 
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd-M6
 # IAPR-6- Module 6 - FoC
-# Ex.No:30
-  Build a C program to demonstrate the use of a pointer to a union. Store an integer value in a union, access it using a union pointer, and display it as both an integer and a character.
+# Ex.No:29
+  Create the C program to calculate the present age of a person by passing structure as a reference.
 # Date : 24-10-25
 # Aim:
-  To build a program in C that uses a pointer to a union to store an integer value and display it in both integer and character format.
+  To create a C program that uses a structure to store the current date and birth date, and to calculate the person’s present age in years, months, and days by passing the structure as a reference.
 # Algorithm:
 ### Step 1:
   Start
 ### Step 2: 
   Include the standard input-output library: #include<stdio.h>.
 ### Step 3:
-  Define a union `abc` with the following members:  
-  - `int a`  
-  - `char b`
+  Define a structure named `date` with members to store:  
+  - Current date (`c_date`, `c_month`, `c_year`)  
+  - Birth date (`b_date`, `b_month`, `b_year`)  
+  - Calculated age (`cal_date`, `cal_month`, `cal_year`)
 ### Step 4:
-  Declare a union variable `var` of type `abc`.
+  Initialize a structure variable with the current date and birth date values.
 ### Step 5:
-  Declare a pointer `ptr` of type `union abc*`.
+  Pass the structure variable to a function `findAge()` by reference.
 ### Step 6:
-  Assign the address of `var` to `ptr`.
+  Inside `findAge()`:  
+  - a. Declare an integer array `month[]` to store the number of days in each month.  
+  - b. If the birth date is greater than the current date:  
+     - Add the number of days of the previous month to the current date.  
+     - Decrease the current month by 1.  
+  - c. If the birth month is greater than the current month:  
+     - Decrease the current year by 1.  
+     - Add 12 to the current month.  
+  - d. Calculate the age in days, months, and years by subtracting the corresponding birth values from the current values.
 ### Step 7:
-  Store an integer value (e.g., 90) in `var.a`.
+  Return the structure pointer containing the calculated age.
 ### Step 8:
-  Access and print the value of `a` using the pointer `ptr` in integer format.
+  Display the calculated age (years, months, and days) in the `main` function.
 ### Step 9:
-  Access and print the same value using the pointer `ptr` in character format.
-### Step 10:
   Stop
 # Program:
 ```
@@ -366,10 +328,73 @@ int main() {
     return 0;
 }
 
+
+
+```
+# Output:
+<img width="450" height="247" alt="image" src="https://github.com/user-attachments/assets/7f88bd52-313d-4e65-b176-151df04e56e6" />
+
+# Result: 
+Thus, the program was implemented and executed successfully, and the required output was obtained.
+
+
+# 19AI304-Fundamentals-of-C-Programming-2025-Odd-M6
+# IAPR-6- Module 6 - FoC
+# Ex.No:30
+  Build a C program to demonstrate the use of a pointer to a union. Store an integer value in a union, access it using a union pointer, and display it as both an integer and a character.
+# Date : 24-10-25
+# Aim:
+  To build a program in C that uses a pointer to a union to store an integer value and display it in both integer and character format.
+# Algorithm:
+### Step 1:
+  Start
+### Step 2: 
+  Include the standard input-output library: #include<stdio.h>.
+### Step 3:
+  Define a union `abc` with the following members:  
+  - `int a`  
+  - `char b`
+### Step 4:
+  Declare a union variable `var` of type `abc`.
+### Step 5:
+  Declare a pointer `ptr` of type `union abc*`.
+### Step 6:
+  Assign the address of `var` to `ptr`.
+### Step 7:
+  Store an integer value (e.g., 90) in `var.a`.
+### Step 8:
+  Access and print the value of `a` using the pointer `ptr` in integer format.
+### Step 9:
+  Access and print the same value using the pointer `ptr` in character format.
+### Step 10:
+  Stop
+# Program:
+```
+#include <stdio.h>
+
+union abc {
+    int a;
+    char b;
+};
+
+int main() {
+    union abc var;
+    union abc *ptr;
+
+    ptr = &var;
+
+    var.a = 90;
+
+    printf("Integer value = %d\n", ptr->a);
+    printf("Character value = %c\n", ptr->b);
+
+    return 0;
+}
+
+
 ```
 # Output:
 
-<img width="488" height="247" alt="image" src="https://github.com/user-attachments/assets/7337c590-c9d9-4aa6-b0e8-1314b6e7d467" />
 
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
